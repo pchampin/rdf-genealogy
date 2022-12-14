@@ -1,0 +1,165 @@
+digraph {
+    rankdir=LR
+
+    #   #  ####  ###   ####  ####
+    ##  #  #  #  #  #  #     #
+    # # #  #  #  #  #  ###   ####
+    #  ##  #  #  #  #  #        #
+    #   #  ####  ###   ####  ####
+
+    node [ fillcolor=white style=filled ]
+    node [ shape=rectangle ]
+
+    subgraph v0 {
+        "rdf-99" [ label="REC-rdf-syntax (1999)" href="https://www.w3.org/TR/1999/REC-rdf-syntax-19990222/"]
+        "rdfs-00" [ label="CR-rdf-schema (2000)" href="https://www.w3.org/TR/2000/CR-rdf-schema-20000327/"]
+    }
+
+    subgraph v1 {
+        rank=same
+        "rdf-primer-04" [ label="rdf-primer (2004)" href="https://www.w3.org/TR/2004/REC-rdf-primer-20040210/"]
+        "rdf-concepts-04" [ label="rdf-concepts (2004)" href="https://www.w3.org/TR/2004/REC-rdf-concepts-20040210/"]
+        "rdf-schema-04" [ label="rdf-schema (2004)" href="https://www.w3.org/TR/2004/REC-rdf-schema-20040210/" ]
+        "rdf-mt-04" [ label="rdf-mt (2004)" href="https://www.w3.org/TR/2004/REC-rdf-mt-20040210/" ]
+        "rdf-syntax-grammar-04" [ label="rdf-syntax-grammar (2004)" href="https://www.w3.org/TR/2004/REC-rdf-syntax-grammar-20040210/"  ]
+        "rdf-testcases-04" [ label="rdf-testcases (2004)" href="https://www.w3.org/TR/2004/REC-rdf-testcases-20040210/" ]
+    }
+
+    subgraph v11 {
+        rank=same
+        "rdf-primer-14" [ label="rdf-primer11 (2014)" href="https://www.w3.org/TR/2014/NOTE-rdf11-primer-20140624/" ]
+        "rdf-concepts-14" [ label="rdf11-concept (2014)" href="https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/" ]
+        "rdf-schema-14" [ label="rdf-schema (2014)" href="https://www.w3.org/TR/2014/REC-rdf-schema-20140225/" ]
+        "rdf-mt-14" [ label="rdf11-mt (2014)" href="https://www.w3.org/TR/2014/REC-rdf11-mt-20140225/" ]
+        "rdf-syntax-grammar-14" [ label="rdf-syntax-grammar (2014)" href="https://www.w3.org/TR/2014/REC-rdf-syntax-grammar-20140225/" ]
+        "turtle-14" [ label="turtle (2014)" href="https://www.w3.org/TR/2014/REC-turtle-20140225/" ]
+        "trig-14" [ label="trig (2014)" href="https://www.w3.org/TR/2014/REC-trig-20140225/" ]
+        "n-triples-14" [ label="n-triples (2014)" href="https://www.w3.org/TR/2014/REC-n-triples-20140225/" ]
+        "n-quads-14" [ label="n-quads (2014)" href="https://www.w3.org/TR/2014/REC-n-quads-20140225/" ]
+
+        node [ shape=note ]
+        "rdf-testcases-14" [ label="rdf11-testcases (2014)" href="https://www.w3.org/TR/2014/NOTE-rdf11-testcases-20140225/" ]
+        "rdf-new-14" [ label="rdf-new (2014)" href="https://www.w3.org/TR/2014/NOTE-rdf11-new-20140225/" ]
+        "rdf-datasets-14" [ label="rdf11-datasets (2014)" href="https://www.w3.org/TR/2014/NOTE-rdf11-datasets-20140225/" ]
+        "rdf-json-14" [ label="rdf-json (2013)" href="https://www.w3.org/TR/2013/NOTE-rdf-json-20131107/" ]
+    }
+
+    subgraph sn {
+        rank=same
+        # tips (unversionned short names)
+        node [ shape=ellipse ]
+        "REC-rdf-syntax" [ href="https://www.w3.org/TR/REC-rdf-syntax/" ]
+        "rdf-primer" [ href="https://www.w3.org/TR/rdf-primer/" ]
+        "rdf-concepts" [ href="https://www.w3.org/TR/rdf-concepts/" ]
+        "rdf-schema" [ href="https://www.w3.org/TR/rdf-schema/" ]
+        "rdf-mt" [ href="https://www.w3.org/TR/rdf-mt/" ]
+        "rdf-syntax-grammar" [ href="https://www.w3.org/TR/rdf-syntax-grammar/" ]
+        "rdf-testcases" [ href="https://www.w3.org/TR/rdf-testcases/" ]
+        "rdf-new" [ href="https://www.w3.org/TR/rdf-new/" ]
+        "rdf-datasets" [ href="https://www.w3.org/TR/rdf-datasets/" ]
+        "rdf-json" [ href="https://www.w3.org/TR/rdf-json/" ]
+        "turtle" [ href="https://www.w3.org/TR/turtle/" ]
+        "trig" [ href="https://www.w3.org/TR/trig/" ]
+        "n-triples" [ href="https://www.w3.org/TR/n-triples/" ]
+        "n-quads" [ href="https://www.w3.org/TR/n-quads/" ]
+    }
+
+    subgraph snvxxx {
+        # versionned short names
+        rank=same
+        node [ shape=ellipse style=dotted ]
+        "rdf11-primer" [ href="https://www.w3.org/TR/rdf11-primer/" ]
+        "rdf11-concepts" [ href="https://www.w3.org/TR/rdf11-concepts/" ]
+        "rdf11-mt" [ href="https://www.w3.org/TR/rdf11-mt/" ]
+        "rdf11-testcases" [ href="https://www.w3.org/TR/rdf11-testcases/" ]
+        "rdf11-new" [ href="https://www.w3.org/TR/rdf11-new/" ]
+        "rdf11-datasets" [ href="https://www.w3.org/TR/rdf11-datasets/" ]
+
+    }
+
+    subgraph legend {
+        label="Legend"
+        cluster=true
+        bgcolor=lightgray
+
+            node [ shape=point]
+            dummy1
+            dummy2
+            dummy3
+            dummy4
+
+            note [ shape=note ]
+            recommendation [ shape=rectangle]
+            "shortname (versionless)" [ shape=ellipse]
+            "shortname (versionned)" [ shape=ellipse style=dotted ]
+
+    }
+
+    ####  ###    ##  ####  ####
+    #     #  #  #    #     #
+    ###   #  #  # ## ###   ####
+    #     #  #  #  # #        #
+    ####  ###    ##  ####  ####
+
+
+    # manual redirect
+    edge [ style=solid arrowhead=normal ]
+    recommendation -> dummy1 [label="manual redirect" ]
+    "rdf-primer-04" -> "rdf-primer-14"
+    "rdf-concepts-04" -> "rdf-concepts-14"
+    "rdf-mt-04" -> "rdf-mt-14"
+    "rdf-testcases-04" -> "rdf-testcases-14"
+
+    # popup redirect
+    edge [ style=solid arrowhead=empty ]
+    recommendation -> dummy2 [label="popup redirect" ]
+    "rdfs-00" -> "rdf-schema"
+    "rdf-schema-04" -> "rdf-schema"
+    "rdf-syntax-grammar-04" -> "rdf-syntax-grammar"
+
+    # next version
+    edge [ style=dotted arrowhead=none ]
+    recommendation -> dummy3 [label="next version" ]
+    "rdf-99" -> "rdf-concepts-04" -> "rdf-concepts-14"
+    "rdf-99" -> "rdf-syntax-grammar-04" -> "rdf-syntax-grammar-14"
+    "rdfs-00" -> "rdf-schema-04" -> "rdf-schema-14"
+    "rdf-primer-04" -> "rdf-primer-14"
+    "rdf-mt-04" -> "rdf-mt-14"
+
+    # short names
+    edge [ style=solid arrowhead=open ]
+    "shortname (versionless)" -> dummy4 [ label="alias of" ]
+    edge [ style=solid arrowtail=open dir=back ]
+    "rdf-syntax-grammar-04" -> "REC-rdf-syntax"
+    "rdf-syntax-grammar-14" -> "rdf-syntax-grammar"
+    "rdf-primer-04" -> "rdf-primer"
+    "rdf-concepts-04" -> "rdf-concepts"
+    "rdf-schema-14" -> "rdf-schema"
+    "rdf-mt-04" -> "rdf-mt"
+    "rdf-testcases-04" -> "rdf-testcases"
+    "rdf-new-14" -> "rdf-new"
+    "rdf-datasets-14" -> "rdf-datasets"
+    "rdf-json-14" -> "rdf-json"
+
+    "rdf-primer-14" -> "rdf11-primer"
+    "rdf-concepts-14" -> "rdf11-concepts"
+    "rdf-mt-14" -> "rdf11-mt"
+    "rdf-testcases-14" -> "rdf11-testcases"
+    "rdf-new-14" -> "rdf11-new"
+    "rdf-datasets-14" -> "rdf11-datasets"
+
+    "turtle-14" -> "turtle"
+    "trig-14" -> "trig"
+    "n-triples-14" -> "n-triples"
+    "n-quads-14" -> "n-quads"
+
+    # force versionned short-names to be right of the ersionless counterpart
+    edge [ style=invisible arrowhead=none dir=forward ]
+    "rdf-primer" -> "rdf11-primer"
+    "rdf-concepts" -> "rdf11-concepts"
+    "rdf-mt" -> "rdf11-mt"
+    "rdf-testcases" -> "rdf11-testcases"
+    "rdf-new" -> "rdf11-new"
+    "rdf-dataset" -> "rdf11-datasets"
+    
+}
